@@ -1,0 +1,7 @@
+package com.maxtrain.bootcamp.request;
+
+public class Request {
+
+	public Request() {}
+
+}

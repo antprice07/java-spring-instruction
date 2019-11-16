@@ -1,0 +1,11 @@
+package com.maxtrain.bootcamp.request;
+
+import javax.persistence.*;
+
+@Entity
+public class Request {
+	
+
+	public Request() {}
+
+}

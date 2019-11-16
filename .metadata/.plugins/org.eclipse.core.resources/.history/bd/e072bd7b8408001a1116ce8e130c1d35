@@ -1,0 +1,18 @@
+package com.maxtrain.bootcamp.request;
+
+import javax.persistence.*;
+
+import com.maxtrain.bootcamp.prs.user.User;
+
+@Entity
+public class Request {
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private int id;
+	@ManyToOne(optional=false)
+	@Column(name="userID")
+	private User user;
+
+	public Request() {}
+
+}

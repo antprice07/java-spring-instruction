@@ -1,0 +1,32 @@
+package com.stuffy.web;
+
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import com.stuffy.business.Stuffy;
+import com.stuffy.db.StuffyRepository;
+
+@CrossOrigin
+@RestController
+@RequestMapping("/stuffies")
+public class StuffyController {
+	@Autowired
+	private StuffyRepository stuffyRepo;
+	
+	@GetMapping("/")
+	public Iterable<Stuffy> listStuffies(){
+		return stuffyRepo.findAll();
+	}
+	
+	@GetMapping("/{id}")
+	public Stuffy getStuffy(@PathVariable Integer id) {
+		Optional<Stuffy> s = stuffyRepo.findById(id);
+		if(!s.isPresent()) {
+			
+		}
+	}
+
+}

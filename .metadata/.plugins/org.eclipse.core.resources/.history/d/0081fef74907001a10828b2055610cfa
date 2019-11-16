@@ -1,0 +1,12 @@
+package com.stuffy.web;
+
+import org.springframework.web.bind.annotation.*;
+
+@CrossOrigin
+@RestController
+@RequestMapping("/stuffies")
+public class StuffyController {
+	
+	
+
+}
