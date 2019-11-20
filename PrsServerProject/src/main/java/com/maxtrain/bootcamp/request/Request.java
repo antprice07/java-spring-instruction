@@ -1,7 +1,7 @@
 package com.maxtrain.bootcamp.request;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
+import java.sql.Date;
 
 import javax.persistence.*;
 
@@ -25,10 +25,10 @@ public class Request {
 	private String deliveryMode;
 	@Column(columnDefinition="varchar(20) not null default 'NEW'")
 	private String status;
-	@Column(columnDefinition="decimal(10,2) not null")
+	@Column(columnDefinition="decimal(10,2) not null default 0")
 	private double total;
 	@Column(columnDefinition="datetime default current_timestamp not null")
-	private LocalDateTime submittedDate;
+	private Date submittedDate;
 	@Column(length=100)
 	private String reasonForRejection;
 	
@@ -37,7 +37,7 @@ public class Request {
 	public Request() {}
 
 	public Request(int id, User user, String description, String justification, LocalDate dateNeeded,
-			String deliveryMode, String status, double total, LocalDateTime submittedDate, String reasonForRejection) {
+			String deliveryMode, String status, double total, Date submittedDate, String reasonForRejection) {
 		super();
 		this.id = id;
 		this.user = user;
@@ -115,11 +115,11 @@ public class Request {
 		this.total = total;
 	}
 
-	public LocalDateTime getSubmittedDate() {
+	public Date getSubmittedDate() {
 		return submittedDate;
 	}
 
-	public void setSubmittedDate(LocalDateTime submittedDate) {
+	public void setSubmittedDate(Date submittedDate) {
 		this.submittedDate = submittedDate;
 	}
 

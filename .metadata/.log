@@ -3766,3 +3766,272 @@ Caused by: java.lang.StackOverflowError
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-16 15:54:24.893
 !MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.qzVLvLIX => OK
+!SESSION 2019-11-19 17:30:05.867 -----------------------------------------------
+eclipse.buildId=4.4.1.201910232221-RELEASE
+java.version=1.8.0_202
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2019-11-19 17:30:26.724
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-11-19 17:30:26.724
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@34fc315d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@34f48d1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-11-19 17:30:44.290
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\max-s'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:30:44.979
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:30:45.054
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@1a8e1baa[org.springframework.tooling.boot.ls:1.12.0.201910232051(id=672)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:30:45.091
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:30:45.964
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:14.730
+!MESSAGE Boot LS startup time from start to initialized: 29497ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:15.068
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.bYVjjMhjisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:15.085
+!MESSAGE subscribing to classpath changes: sts4.classpath.bYVjjMhj isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:15.102
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:15.117
+!MESSAGE subsribers = {sts4.classpath.bYVjjMhj=Send Classpath Notifications(58)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:15.129
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:15.140
+!MESSAGE project StudentSpringDemo ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:15.152
+!MESSAGE project PrsServerProject ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:15.170
+!MESSAGE Preparing classpath changed notification StudentSpringDemo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:15.199
+!MESSAGE project jbc-stuffy-dispenser-web ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:15.210
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:15.226
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:15.246
+!MESSAGE classpath=113 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:15.260
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.bYVjjMhj => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:15.272
+!MESSAGE buffering callback sts4.classpath.bYVjjMhj StudentSpringDemo false 113
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:15.286
+!MESSAGE Preparing classpath changed notification PrsServerProject
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:15.299
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:15.324
+!MESSAGE classpath=113 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:15.344
+!MESSAGE buffering callback sts4.classpath.bYVjjMhj PrsServerProject false 113
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:15.368
+!MESSAGE Preparing classpath changed notification jbc-stuffy-dispenser-web
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:15.386
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:15.450
+!MESSAGE classpath=113 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:15.473
+!MESSAGE buffering callback sts4.classpath.bYVjjMhj jbc-stuffy-dispenser-web false 113
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:15.502
+!MESSAGE executing callback sts4.classpath.bYVjjMhj 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:15.820
+!MESSAGE executing callback sts4.classpath.bYVjjMhj SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:45.701
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:45.738
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@1a8e1baa[org.springframework.tooling.boot.ls:1.12.0.201910232051(id=672)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:45.865
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-11-19 17:31:49.024
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.supportsWorkspaceFolderCapability(LanguageServerWrapper.java:523)
+	at org.eclipse.lsp4e.LanguageServerWrapper.canOperate(LanguageServerWrapper.java:512)
+	at org.eclipse.lsp4e.LanguageServerWrapper.canOperate(LanguageServerWrapper.java:831)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.lambda$6(LanguageServiceAccessor.java:320)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+	at java.util.HashMap$KeySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.collect(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:321)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLanguageServers(LanguageServiceAccessor.java:511)
+	at org.eclipse.lsp4e.ConnectDocumentToLanguageServerSetupParticipant$2.run(ConnectDocumentToLanguageServerSetupParticipant.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-11-19 17:31:50.068
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.supportsWorkspaceFolderCapability(LanguageServerWrapper.java:523)
+	at org.eclipse.lsp4e.LanguageServerWrapper.canOperate(LanguageServerWrapper.java:512)
+	at org.eclipse.lsp4e.LanguageServerWrapper.canOperate(LanguageServerWrapper.java:831)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.lambda$7(LanguageServiceAccessor.java:338)
+	at java.util.stream.MatchOps$1MatchSink.accept(Unknown Source)
+	at java.util.HashMap$KeySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.MatchOps$MatchOp.evaluateSequential(Unknown Source)
+	at java.util.stream.MatchOps$MatchOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.anyMatch(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:337)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLanguageServers(LanguageServiceAccessor.java:511)
+	at org.eclipse.lsp4e.ConnectDocumentToLanguageServerSetupParticipant$2.run(ConnectDocumentToLanguageServerSetupParticipant.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:52.349
+!MESSAGE Boot LS startup time from start to initialized: 6452ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:52.429
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.coFltGfmisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:52.452
+!MESSAGE subscribing to classpath changes: sts4.classpath.coFltGfm isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:52.470
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:52.484
+!MESSAGE subsribers = {sts4.classpath.bYVjjMhj=Send Classpath Notifications(58), sts4.classpath.coFltGfm=Send Classpath Notifications(110)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:52.504
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:52.534
+!MESSAGE project PrsServerProject ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:52.546
+!MESSAGE project StudentSpringDemo ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:52.558
+!MESSAGE Preparing classpath changed notification PrsServerProject
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:52.570
+!MESSAGE project jbc-stuffy-dispenser-web ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:52.584
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:52.596
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:52.623
+!MESSAGE classpath=113 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:52.636
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.coFltGfm => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:52.648
+!MESSAGE buffering callback sts4.classpath.coFltGfm PrsServerProject false 113
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:52.661
+!MESSAGE Preparing classpath changed notification StudentSpringDemo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:52.669
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:52.691
+!MESSAGE classpath=113 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:52.712
+!MESSAGE buffering callback sts4.classpath.coFltGfm StudentSpringDemo false 113
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:52.722
+!MESSAGE Preparing classpath changed notification jbc-stuffy-dispenser-web
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:52.731
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:52.751
+!MESSAGE classpath=113 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:52.770
+!MESSAGE buffering callback sts4.classpath.coFltGfm jbc-stuffy-dispenser-web false 113
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:52.796
+!MESSAGE executing callback sts4.classpath.coFltGfm 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 17:31:52.915
+!MESSAGE executing callback sts4.classpath.coFltGfm SUCCESS [done]
+
+!ENTRY org.eclipse.ui 2 2 2019-11-19 18:51:14.614
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 21:02:02.798
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.coFltGfm
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 21:02:02.833
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.coFltGfm
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 21:02:02.854
+!MESSAGE subsribers = {sts4.classpath.bYVjjMhj=Send Classpath Notifications(58)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-19 21:02:02.870
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.coFltGfm => OK
