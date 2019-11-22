@@ -1,6 +1,7 @@
 package com.maxtrain.bootcamp.request;
 
 import java.sql.Date;
+import java.time.LocalDate;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,11 +35,16 @@ public class RequestController {
 	}
 	@GetMapping("/{id}")
 	public JsonResponse get(@PathVariable int id) {
-		Optional<Request> r = reqRepo.findById(id);
-		if(!r.isPresent()) {
-			return JsonResponse.getInstance("Request does not exist!");
+		try {
+			Optional<Request> r = reqRepo.findById(id);
+			if(!r.isPresent()) {
+				return JsonResponse.getInstance("Request does not exist!");
+			}
+			return JsonResponse.getInstance(r.get());
+		} catch (Exception e) {
+			e.printStackTrace();
+			return JsonResponse.getInstance(e);
 		}
-		return JsonResponse.getInstance(r.get());
 	}
 	private JsonResponse save(Request r) {
 		try {
@@ -58,6 +64,7 @@ public class RequestController {
 		try {
 			r.setStatus(REQUEST_STATUS_NEW);
 			r.setTotal(0);
+			r.setSubmittedDate(new Date(System.currentTimeMillis()));
 			return save(r);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -78,11 +85,16 @@ public class RequestController {
 	
 	@DeleteMapping("/{id}")
 	public JsonResponse delete(@PathVariable Integer id) {
-		if(id==null) return JsonResponse.getInstance("Parameter id must not be null!");
-		Optional<Request> r = reqRepo.findById(id);
-		if(!r.isPresent()) return JsonResponse.getInstance("No user found with parameter id!");
-		reqRepo.deleteById(id);
-		return JsonResponse.getInstance(r);
+		try {
+			if(id==null) return JsonResponse.getInstance("Parameter id must not be null!");
+			Optional<Request> r = reqRepo.findById(id);
+			if(!r.isPresent()) return JsonResponse.getInstance("No user found with parameter id!");
+			reqRepo.deleteById(id);
+			return JsonResponse.getInstance(r);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return JsonResponse.getInstance(e);
+		}
 	}
 	
 	private JsonResponse setRequestStatus(Request r, String status) {
@@ -134,7 +146,12 @@ public class RequestController {
 	
 	@GetMapping("/reviews/{id}")
 	public JsonResponse getReviews(@PathVariable Integer id) {
-		return JsonResponse.getInstance(reqRepo.getRequestByStatusAndUserIdNot(REQUEST_STATUS_REVIEW, id));
+		try {
+			return JsonResponse.getInstance(reqRepo.getRequestByStatusAndUserIdNot(REQUEST_STATUS_REVIEW, id));
+		} catch (Exception e) {
+			e.printStackTrace();
+			return JsonResponse.getInstance(e);
+		}
 	}
 	
 	
