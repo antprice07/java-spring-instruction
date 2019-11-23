@@ -6,6 +6,7 @@ import com.maxtrain.bootcamp.product.Product;
 import com.maxtrain.bootcamp.request.Request;
 
 @Entity
+@Table(uniqueConstraints=@UniqueConstraint(name="UIDX_request_product",columnNames= {"requestId","productId"}))
 public class LineItem {
 
 	@Id
@@ -14,10 +15,9 @@ public class LineItem {
 	@ManyToOne(optional=false)
 	@JoinColumn(name="RequestID")
 	private Request request;
-	@ManyToOne
+	@ManyToOne(optional=false)
 	@JoinColumn(name="ProductID")
 	private Product product;
-	@Column(nullable=false)
 	private int quantity;
 	
 	public LineItem() {}

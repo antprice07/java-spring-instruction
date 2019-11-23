@@ -1,7 +1,0 @@
-package com.stuffy.db;
-
-import org.springframework.data.repository.CrudRepository;
-
-public interface StuffyRepository extends CrudRepository<T, ID> {
-
-}
