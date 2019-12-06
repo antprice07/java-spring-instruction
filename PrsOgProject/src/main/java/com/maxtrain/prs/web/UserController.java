@@ -53,7 +53,7 @@ public class UserController {
 		}
 	}
 	
-	@PostMapping()
+	@PostMapping("/")
 	public JsonResponse addUser(@RequestBody User user) {
 		try {
 			return save(user);
@@ -63,7 +63,7 @@ public class UserController {
 		}
 	}
 	
-	@PutMapping()
+	@PutMapping("/")
 	public JsonResponse updateUser(@RequestBody User user) {
 		try {
 			Optional<User> u = userRepo.findById(user.getId());
