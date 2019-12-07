@@ -77,8 +77,9 @@ public class LineItemController {
 	@PostMapping("/")
 	public JsonResponse addLineItem(@RequestBody LineItem l) {
 		try {
+			save(l);
 			recalcLines(l.getRequest().getId());
-			return save(l);
+			return JsonResponse.getInstance(l);
 		} catch (Exception e) {
 			e.printStackTrace();
 			return JsonResponse.getInstance(e);
@@ -91,8 +92,9 @@ public class LineItemController {
 			Optional<LineItem> l = lineRepo.findById(line.getId());
 			if (!l.isPresent())
 				return JsonResponse.getInstance("Path ID doesn't match existing line item.");
+			save(line);
 			recalcLines(line.getRequest().getId());
-			return save(line);
+			return JsonResponse.getInstance(line);
 		} catch (Exception e) {
 			e.printStackTrace();
 			return JsonResponse.getInstance(e);

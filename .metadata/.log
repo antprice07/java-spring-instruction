@@ -8678,3 +8678,213 @@ java.util.concurrent.TimeoutException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 10:55:06.923
 !MESSAGE executing callback sts4.classpath.CcOQNxsf SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 11:56:58.313
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.CcOQNxsf
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 11:56:58.327
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.CcOQNxsf
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 11:56:58.340
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 11:56:58.352
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.CcOQNxsf => OK
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-12-07 13:02:52.301
+!MESSAGE Launch configuration ProductServiceTest references closed project mockito-examples
+!STACK 1
+org.eclipse.core.runtime.CoreException: Launch configuration ProductServiceTest references closed project mockito-examples
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1838)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1710)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:53)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:38)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:225)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:522)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:410)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:352)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:378)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:70)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:825)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:989)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:147)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:82)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.launching 4 124 2019-12-07 13:02:52.301
+!MESSAGE Launch configuration ProductServiceTest references closed project mockito-examples
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-12-07 13:02:52.301
+!MESSAGE Launch configuration ProductServiceTest references closed project mockito-examples
+!STACK 1
+org.eclipse.core.runtime.CoreException: Launch configuration ProductServiceTest references closed project mockito-examples
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1838)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1710)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:53)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:38)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:225)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:522)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:410)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:353)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:378)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:70)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:825)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:989)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:147)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:82)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.launching 4 124 2019-12-07 13:02:52.301
+!MESSAGE Launch configuration ProductServiceTest references closed project mockito-examples
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-12-07 13:02:52.332
+!MESSAGE Launch configuration ProductServiceTest references closed project mockito-examples
+!STACK 1
+org.eclipse.core.runtime.CoreException: Launch configuration ProductServiceTest references closed project mockito-examples
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1838)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1710)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:53)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:38)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:225)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationChanged(LaunchManager.java:2147)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.writeNewFile(LaunchConfigurationWorkingCopy.java:375)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave0(LaunchConfigurationWorkingCopy.java:258)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:228)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:186)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:354)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:378)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:70)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:825)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:989)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:147)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1374)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:82)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.launching 4 124 2019-12-07 13:02:52.332
+!MESSAGE Launch configuration ProductServiceTest references closed project mockito-examples
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 13:04:26.931
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 13:04:26.980
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@393aac93[org.springframework.tooling.boot.ls:1.13.0.201911200938(id=705)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 13:04:26.997
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 13:04:30.276
+!MESSAGE Boot LS startup time from start to initialized: 3261ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 13:04:30.349
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.ijeYjpAEisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 13:04:30.396
+!MESSAGE subscribing to classpath changes: sts4.classpath.ijeYjpAE isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 13:04:30.412
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 13:04:30.432
+!MESSAGE subsribers = {sts4.classpath.ijeYjpAE=Send Classpath Notifications(775)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 13:04:30.448
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 13:04:30.478
+!MESSAGE project PrsOgProject ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 13:04:30.497
+!MESSAGE project PrsServerProject ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 13:04:30.515
+!MESSAGE Preparing classpath changed notification PrsOgProject
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 13:04:30.530
+!MESSAGE project PrsServerProject SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 13:04:30.553
+!MESSAGE project StudentSpringDemo ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 13:04:30.570
+!MESSAGE project StudentSpringDemo SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 13:04:30.584
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 13:04:30.599
+!MESSAGE project jbc-stuffy-dispenser-web ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 13:04:30.614
+!MESSAGE classpath=115 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 13:04:30.624
+!MESSAGE project jbc-stuffy-dispenser-web SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 13:04:30.640
+!MESSAGE buffering callback sts4.classpath.ijeYjpAE PrsOgProject false 115
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 13:04:30.650
+!MESSAGE project mockito-examples ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 13:04:30.660
+!MESSAGE executing callback sts4.classpath.ijeYjpAE 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 13:04:30.674
+!MESSAGE project mockito-examples SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 13:04:30.752
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 13:04:30.770
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.ijeYjpAE => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 13:04:30.786
+!MESSAGE executing callback sts4.classpath.ijeYjpAE SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 13:24:58.321
+!MESSAGE Preparing classpath changed notification PrsServerProject
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 13:24:58.419
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 13:24:58.480
+!MESSAGE classpath=113 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 13:24:58.510
+!MESSAGE buffering callback sts4.classpath.ijeYjpAE PrsServerProject false 113
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 13:24:58.519
+!MESSAGE executing callback sts4.classpath.ijeYjpAE 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 13:24:58.541
+!MESSAGE executing callback sts4.classpath.ijeYjpAE SUCCESS [done]
+
+!ENTRY org.eclipse.jdt.debug 2 0 2019-12-07 13:36:49.071
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 13:54:54.961
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.ijeYjpAE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 13:54:54.974
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.ijeYjpAE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 13:54:54.983
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-07 13:54:54.991
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.ijeYjpAE => OK
