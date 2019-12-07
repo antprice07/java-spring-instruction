@@ -19,7 +19,7 @@ public class LineItemController {
 	private LineItemRepository lineRepo;
 	@Autowired
 	private RequestRepository reqRepo;
-	
+
 	@GetMapping("/")
 	public JsonResponse getAllLineItems() {
 		try {
@@ -29,20 +29,22 @@ public class LineItemController {
 			return JsonResponse.getInstance(e);
 		}
 	}
-	
+
 	@GetMapping("/{id}")
 	public JsonResponse getLineItem(@PathVariable Integer id) {
-		if(id==null) return JsonResponse.getInstance("Path ID cannot be null.");
+		if (id == null)
+			return JsonResponse.getInstance("Path ID cannot be null.");
 		try {
 			Optional<LineItem> l = lineRepo.findById(id);
-			if(!l.isPresent()) return JsonResponse.getInstance("No line item match for ID.");
+			if (!l.isPresent())
+				return JsonResponse.getInstance("No line item match for ID.");
 			return JsonResponse.getInstance(l.get());
 		} catch (Exception e) {
 			e.printStackTrace();
 			return JsonResponse.getInstance(e);
 		}
 	}
-	
+
 	private JsonResponse save(LineItem line) {
 		try {
 			LineItem l = lineRepo.saveAndFlush(line);
@@ -55,21 +57,23 @@ public class LineItemController {
 			return JsonResponse.getInstance(e);
 		}
 	}
-	
+
 	private void recalcLines(int requestID) throws Exception {
 		Optional<Request> request = reqRepo.findById(requestID);
-		if(!request.isPresent()) { throw new Exception("Cannot recalculate total because request id is not found. ID: "+requestID);}
+		if (!request.isPresent()) {
+			throw new Exception("Cannot recalculate total because request id is not found. ID: " + requestID);
+		}
 		Iterable<LineItem> lines = lineRepo.findLineItemByRequestId(requestID);
 		double total = 0;
-		for(LineItem l: lines) {
-			double subtotal = (l.getProduct().getPrice()*l.getQuantity());
-			total+=subtotal;
+		for (LineItem l : lines) {
+			double subtotal = (l.getProduct().getPrice() * l.getQuantity());
+			total += subtotal;
 		}
 		Request r = request.get();
 		r.setTotal(total);
 		reqRepo.save(r);
 	}
-	
+
 	@PostMapping("/")
 	public JsonResponse addLineItem(@RequestBody LineItem l) {
 		try {
@@ -80,12 +84,13 @@ public class LineItemController {
 			return JsonResponse.getInstance(e);
 		}
 	}
-	
+
 	@PutMapping("/")
 	public JsonResponse updateLine(@RequestBody LineItem line) {
 		try {
 			Optional<LineItem> l = lineRepo.findById(line.getId());
-			if(!l.isPresent()) return JsonResponse.getInstance("Path ID doesn't match existing line item.");
+			if (!l.isPresent())
+				return JsonResponse.getInstance("Path ID doesn't match existing line item.");
 			recalcLines(line.getRequest().getId());
 			return save(line);
 		} catch (Exception e) {
@@ -93,13 +98,15 @@ public class LineItemController {
 			return JsonResponse.getInstance(e);
 		}
 	}
-	
+
 	@DeleteMapping("/{id}")
 	public JsonResponse deleteLine(@PathVariable Integer id) {
-		if(id==null) return JsonResponse.getInstance("Path ID cannot be null.");
+		if (id == null)
+			return JsonResponse.getInstance("Path ID cannot be null.");
 		try {
 			Optional<LineItem> l = lineRepo.findById(id);
-			if(!l.isPresent()) return JsonResponse.getInstance("Line item does not exist.");
+			if (!l.isPresent())
+				return JsonResponse.getInstance("Line item does not exist.");
 			lineRepo.deleteById(id);
 			lineRepo.flush();
 			recalcLines(l.get().getRequest().getId());
@@ -109,7 +116,7 @@ public class LineItemController {
 			return JsonResponse.getInstance(e);
 		}
 	}
-	
+
 	@GetMapping("/lines-for-pr/{id}")
 	public JsonResponse getByRequest(@PathVariable Integer id) {
 		try {
@@ -120,37 +127,5 @@ public class LineItemController {
 			return JsonResponse.getInstance(e);
 		}
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 }

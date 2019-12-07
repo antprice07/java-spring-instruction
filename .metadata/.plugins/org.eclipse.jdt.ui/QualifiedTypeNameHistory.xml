@@ -3,7 +3,6 @@
 <fullyQualifiedTypeName name="javax.persistence.Id"/>
 <fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
 <fullyQualifiedTypeName name="com.stuffy.db.StuffyRepository"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.stuffy.business.Stuffy"/>
 <fullyQualifiedTypeName name="com.maxtrain.bootcamp.prs.vendor.Vendor"/>
 <fullyQualifiedTypeName name="com.maxtrain.bootcamp.prs.user.User"/>
@@ -26,8 +25,6 @@
 <fullyQualifiedTypeName name="com.maxtrain.bootcamp.product.ProductRepository"/>
 <fullyQualifiedTypeName name="com.maxtrain.bootcamp.request.Request"/>
 <fullyQualifiedTypeName name="com.maxtrain.bootcamp.request.RequestController"/>
-<fullyQualifiedTypeName name="com.maxtrain.prs.db.UserRepository"/>
-<fullyQualifiedTypeName name="com.maxtrain.prs.business.User"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
 <fullyQualifiedTypeName name="com.maxtrain.prs.db.VendorRepository"/>
 <fullyQualifiedTypeName name="com.maxtrain.prs.business.Vendor"/>
@@ -38,9 +35,15 @@
 <fullyQualifiedTypeName name="javax.persistence.Entity"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.CrossOrigin"/>
 <fullyQualifiedTypeName name="com.maxtrain.prs.db.LineItemRepository"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="com.maxtrain.prs.db.RequestRepository"/>
 <fullyQualifiedTypeName name="com.maxtrain.prs.business.LineItem"/>
 <fullyQualifiedTypeName name="java.util.Optional"/>
 <fullyQualifiedTypeName name="com.maxtrain.prs.business.Request"/>
+<fullyQualifiedTypeName name="org.springframework.test.context.junit4.SpringRunner"/>
+<fullyQualifiedTypeName name="org.springframework.boot.test.context.SpringBootTest"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="com.maxtrain.prs.db.UserRepository"/>
+<fullyQualifiedTypeName name="com.maxtrain.prs.business.User"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.junit.Test"/>
 </qualifiedTypeNameHistroy>

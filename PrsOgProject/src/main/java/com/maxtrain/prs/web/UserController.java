@@ -89,7 +89,7 @@ public class UserController {
 		}
 	}
 	
-	@GetMapping("/authenticate")
+	@PostMapping("/authenticate")
 	public JsonResponse authenticate(@RequestBody User u) {
 		String username = u.getUsername();
 		String password = u.getPassword();
